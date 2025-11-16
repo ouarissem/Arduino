@@ -1,0 +1,15 @@
+#include <LiquidCrystal.h>
+
+// تعريف أرجل الشاشة
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // (RS, E, D4, D5, D6, D7)
+
+void setup() {
+  lcd.begin(16, 2);           // تهيئة شاشة 16x2
+  lcd.print("Hellow");     // السطر الأول
+  lcd.setCursor(0, 1);        // ننتقل للسطر الثاني، العمود 0
+  lcd.print("ouarissem!");      // عرض الاسم
+}
+
+void loop() {
+  // لا حاجة لشيء هنا — النص ثابت
+}
